@@ -45,7 +45,7 @@ Vagrant.configure(2) do |config|
     devbox.vm.synced_folder "../src", "/var/www"
 
     devbox.vm.provider "virtualbox" do |vb|
-      vb.customize ['modifyvm', :id, '--name', "BrazilFoundation-Web"]
+      vb.customize ['modifyvm', :id, '--name', "DevBox"]
 
       # Don't display the VirtualBox GUI when booting the machine
       vb.gui = false
