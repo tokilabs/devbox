@@ -1,0 +1,52 @@
+{
+  "create": {
+    "actors": [
+      "pivotal",
+      "svallory"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "read": {
+    "actors": [
+      "pivotal",
+      "svallory"
+    ],
+    "groups": [
+      "admins",
+      "clients",
+      "users"
+    ]
+  },
+  "update": {
+    "actors": [
+      "pivotal",
+      "svallory"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "delete": {
+    "actors": [
+      "pivotal",
+      "svallory"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "grant": {
+    "actors": [
+      "pivotal",
+      "svallory"
+    ],
+    "groups": [
+      "admins"
+    ]
+  }
+}

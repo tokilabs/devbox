@@ -1,0 +1,29 @@
+{
+    "name": "web",
+    "description": "Web server role",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+      "packages": [
+        "git"
+      ],
+      "authorized_keys": {
+        "app": [
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+IUXKEwgSAjypvuuedx8DqpIQrNtHcLWBFEnc24vWV1BApwDa57+bxAOKNTwk/QTOsmjDjyiiHNx532IW4Yg0+U/S0uFvHIlmpuFRst2rPloMktIPy2gOMXOqRhy8uwheGMP7FhXPZaivTYFJreLu1981ipMl5irhdo++FOU5G2DnSBIN1vqS1fR2zAEy1Nnc1Nabx0W5IoaIdAZJ5Z+I49XXq09pismxa6Mkx9otL6ijU7Jf7cH5RRoGj6BJQk/XuNdWpOCw1hWDOT3n5Gn6BGcdx0AoGD4DzqbNjXR1r9Wmjx26YEgNMC0iZRspKUUJMwhNa3TlA4u9N8RrAR0D me@saulovallory.com"
+        ],
+        "root": [
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+IUXKEwgSAjypvuuedx8DqpIQrNtHcLWBFEnc24vWV1BApwDa57+bxAOKNTwk/QTOsmjDjyiiHNx532IW4Yg0+U/S0uFvHIlmpuFRst2rPloMktIPy2gOMXOqRhy8uwheGMP7FhXPZaivTYFJreLu1981ipMl5irhdo++FOU5G2DnSBIN1vqS1fR2zAEy1Nnc1Nabx0W5IoaIdAZJ5Z+I49XXq09pismxa6Mkx9otL6ijU7Jf7cH5RRoGj6BJQk/XuNdWpOCw1hWDOT3n5Gn6BGcdx0AoGD4DzqbNjXR1r9Wmjx26YEgNMC0iZRspKUUJMwhNa3TlA4u9N8RrAR0D me@saulovallory.com"
+        ]
+      },
+      "db": {
+        "install_server": false
+      }
+    },
+    "override_attributes": {
+    },
+    "run_list": [
+        "recipe[doare-base]",
+        "recipe[doare-nginx]",
+        "recipe[doare-php]"
+    ]
+}

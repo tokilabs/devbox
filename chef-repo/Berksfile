@@ -1,0 +1,9 @@
+source 'https://supermarket.chef.io'
+
+cookbook 'doare', path: 'cookbooks/doare'
+cookbook 'doare-base', path: 'cookbooks/doare-base'
+cookbook 'doare-mariadb', path: 'cookbooks/doare-mariadb'
+cookbook 'doare-nginx', path: 'cookbooks/doare-nginx'
+cookbook 'doare-php', path: 'cookbooks/doare-php'
+cookbook 'brazilfoundation', path: 'cookbooks/brazilfoundation'
+cookbook 'theblacksmith', path: 'cookbooks/theblacksmith'

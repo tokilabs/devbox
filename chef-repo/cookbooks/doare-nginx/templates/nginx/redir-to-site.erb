@@ -1,0 +1,6 @@
+# Redirect everything to the main site. We use a separate server statement and NOT an if statement - see http://wiki.nginx.org/IfIsEvil
+
+server {
+        server_name  _;
+        return 302 $scheme://<%=@site.domain%>$request_uri;
+}

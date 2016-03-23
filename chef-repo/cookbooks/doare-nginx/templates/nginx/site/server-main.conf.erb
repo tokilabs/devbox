@@ -1,0 +1,13 @@
+        server_name <%=@site.domain%>;
+        root <%=@site.root%>;
+
+        client_max_body_size <%=@site.max_body_size%>;
+
+        index index.php;
+
+        include /etc/nginx/global/restrictions.conf;
+        include /etc/nginx/global/wordpress/restrictions.conf;
+
+        # Additional rules go here.
+
+        include /etc/nginx/sites-available/<%=@site.name%>/wordpress.conf;

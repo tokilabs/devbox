@@ -1,0 +1,11 @@
+{
+  "name": "production",
+  "description": "Nodes in production",
+  "default_attributes": {
+    "env": "production",
+    "private_networking": {
+      "iface": "eth1",
+      "addr_family": "inet"
+    }
+  }
+}

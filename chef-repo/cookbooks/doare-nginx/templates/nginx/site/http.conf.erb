@@ -1,0 +1,8 @@
+include /etc/nginx/sites-available/<%=@site.name%>/php-fpm.conf;
+<% if @site.force_non_www %>
+include /etc/nginx/sites-available/<%=@site.name%>/force-non-www.conf;<%
+end %>
+
+server {
+  include /etc/nginx/sites-available/<%=@site.name%>/server-main.conf;
+}

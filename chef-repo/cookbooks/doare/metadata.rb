@@ -1,0 +1,12 @@
+name 'doare'
+maintainer 'Doare, Inc'
+maintainer_email 'devs@doare.org'
+license 'Proprietary - All Rights Reserved'
+description 'Installs/Configures doare'
+long_description 'Installs/Configures doare'
+version '0.1.0'
+
+depends 'doare-base'
+depends 'doare-mariadb'
+depends 'doare-nginx'
+depends 'doare-php'

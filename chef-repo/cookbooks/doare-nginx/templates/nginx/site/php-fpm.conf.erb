@@ -1,0 +1,5 @@
+# Upstream to abstract backend connection(s) for PHP.
+upstream <%=@site.upstream.name%> {
+    #this should match value of "listen" directive in php-fpm pool
+    server <%=@site.upstream.server%>;
+}

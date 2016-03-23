@@ -1,0 +1,17 @@
+# Redirect to HTTPS
+
+server {
+    listen <%=@site.http_port%> <%= @site.default ? 'default_server' : '' %>;
+    listen [::]:<%=@site.http_port%> <%= @site.default ? 'default_server' : '' %>;
+
+    server_name <%=@site.domain%>;
+    # Redirect all HTTP requests to HTTPS with a 301 Moved Permanently response.
+<%
+    if @site.force_non_www
+      %>return 301 https://<%=@site.domain%>$request_uri;<%
+    else
+      %>return 301 https://$host$request_uri;<%
+    end %>
+}
+
+include /etc/nginx/sites-available/<%=@site.name%>/https.conf;

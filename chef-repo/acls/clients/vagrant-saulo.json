@@ -1,0 +1,54 @@
+{
+  "create": {
+    "actors": [
+      "pivotal",
+      "svallory",
+      "vagrant-saulo"
+    ],
+    "groups": [
+      "admins"
+    ]
+  },
+  "read": {
+    "actors": [
+      "pivotal",
+      "svallory",
+      "vagrant-saulo"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "update": {
+    "actors": [
+      "pivotal",
+      "svallory",
+      "vagrant-saulo"
+    ],
+    "groups": [
+      "admins"
+    ]
+  },
+  "delete": {
+    "actors": [
+      "pivotal",
+      "svallory",
+      "vagrant-saulo"
+    ],
+    "groups": [
+      "admins",
+      "users"
+    ]
+  },
+  "grant": {
+    "actors": [
+      "pivotal",
+      "svallory",
+      "vagrant-saulo"
+    ],
+    "groups": [
+      "admins"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "clients",
+  "clients": [
+    "doare-validator",
+    "vagrant-saulo",
+    "brazilfoundation-db",
+    "brazilfoundation-web"
+  ]
+}

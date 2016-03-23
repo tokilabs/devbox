@@ -1,0 +1,7 @@
+# https conf already includes php-fpm...
+include /etc/nginx/sites-available/<%=@site.name%>/https.conf;
+
+# and http conf does too, thats why we don't simply include it
+server {
+    include /etc/nginx/sites-available/<%=@site.name%>/server-main.conf;
+}

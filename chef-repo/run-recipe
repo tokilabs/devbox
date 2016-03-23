@@ -1,0 +1,3 @@
+#!/bin/sh
+
+knife bootstrap $1 --sudo --node-name $2 --run-list "recipe[$3]"
