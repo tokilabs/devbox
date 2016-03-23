@@ -82,6 +82,7 @@ Vagrant.configure(2) do |config|
         :app => {
           domain: 'devbox.vm',
           checkout_code: false,
+          path: '/var/www/public',
           php_fpm_sock: '/var/run/php5-fpm-default.sock'
         },
         :db => {

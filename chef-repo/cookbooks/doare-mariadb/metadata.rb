@@ -8,3 +8,4 @@ version '0.1.1'
 
 depends 'doare-base'
 depends 'mariadb', '~> 0.3.1'
+depends 'mysql2_chef_gem', '~> 1.0'

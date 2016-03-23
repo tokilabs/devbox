@@ -1,0 +1,12 @@
+name 'theblacksmith'
+maintainer 'The Blacksmith (a.k.a. Saulo Vallory)'
+maintainer_email 'me@saulovallory.com'
+license 'Proprietary - All Rights Reserved'
+description 'Installs/Configures theblacksmith'
+long_description 'Installs/Configures theblacksmith'
+version '0.1.0'
+
+depends          'apt'
+depends          'build-essential', '~> 2.2.4'
+depends          'locale', '~> 1.0.2'
+depends          'magic_shell'

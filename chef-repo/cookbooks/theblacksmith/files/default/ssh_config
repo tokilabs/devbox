@@ -1,0 +1,17 @@
+Host *
+  StrictHostKeyChecking no
+  ControlMaster auto
+  ControlPath   /tmp/ssh-mux-%h_%p_%r
+
+Host github.com
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+
+Host github.deploy
+  HostName github.com
+  IdentityFile ~/.ssh/github-deploy
+  IdentitiesOnly yes
+
+Host gitlab.com
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
