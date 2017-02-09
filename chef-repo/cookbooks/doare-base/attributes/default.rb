@@ -1,3 +1,4 @@
+# NOT WORKING
 default['packages'] = []
 
 default['private_networking']['nodes_selector'] = 'chef_environment:production'

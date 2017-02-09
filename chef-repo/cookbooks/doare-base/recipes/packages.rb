@@ -14,8 +14,6 @@ packages = [
   'zsh'
 ]
 
-packages += node[:packages]
-
 package 'Install packages' do
   package_name packages
 
