@@ -42,7 +42,7 @@ Vagrant.configure(2) do |config|
     devbox.vm.hostname = 'devbox.vm'
     devbox.vm.network "private_network", ip: "10.0.0.2"
 
-    devbox.vm.synced_folder "../src", "/var/www"
+    devbox.vm.synced_folder "../public", "/var/www/public"
 
     devbox.vm.provider "virtualbox" do |vb|
       vb.customize ['modifyvm', :id, '--name', "DevBox"]
